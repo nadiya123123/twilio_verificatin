@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Send OTP</h1>
+    <form method="post" action="{% url 'send_otp' %}">
+        {% csrf_token %}
+        <label for="phone_number">Phone Number:</label>
+        <input type="text" name="phone_number" id="phone_number" required>
+        <br>
+        <input type="submit" value="Send OTP">
+    </form>
+{% endblock %}
