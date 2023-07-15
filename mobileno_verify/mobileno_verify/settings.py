@@ -123,10 +123,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
+AUTH_USER_MODEL='verification.User'
+LOGIN_URL = '/login/'
 
 TWILIO_VERIFY_SERVICE_SID='VAbc2e76fec7d4fa74dea52b7d783a3e64'
 TWILIO_ACCOUNT_SID='ACc4ea9779e4c4b768d9f0d0fac8cb1761'
-TWILIO_AUTH_TOKEN='05ddea668b86f9c9732feb04f2247bfa'
+TWILIO_AUTH_TOKEN='f3d66f56427182e7c353276f307de42d'
 

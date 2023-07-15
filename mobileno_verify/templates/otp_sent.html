@@ -3,4 +3,11 @@
 {% block content %}
     <h1>OTP Sent</h1>
     <p>OTP has been sent to {{ phone_number }}.</p>
+<form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        <label for="otp">your otp:</label>
+        <input type="number" name="otp" id="otp" required>
+        <br>
+        <input type="submit">
+</form>
 {% endblock %}
